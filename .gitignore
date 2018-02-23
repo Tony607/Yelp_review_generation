@@ -1,0 +1,10 @@
+dataset/
+*.hdf5
+*.ipynb_checkpoints
+*.p
+*.HDF5
+__pycache__
+model
+Graph
+*.tar
+*.png

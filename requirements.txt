@@ -1,0 +1,4 @@
+numpy
+keras
+pandas
+h5py
