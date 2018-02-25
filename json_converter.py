@@ -85,7 +85,8 @@ def get_row(line_contents, column_names):
                         column_name,
                         )
         if isinstance(line_value, str):
-            row.append('{0}'.format(line_value.encode('utf-8')))
+            # Convert a string that might have non-ascii chars to pure ascii string.
+            row.append(str(line_value.encode('utf-8'))[2:-1])
         elif line_value is not None:
             row.append('{0}'.format(line_value))
         else:
